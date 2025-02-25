@@ -12,7 +12,8 @@ const Hero = ({
 }) => {
   return (
     <>
-      {/* <motion.div
+      {
+        /* <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -25,7 +26,8 @@ const Hero = ({
             // restDelta: 0.001, // if spring
           },
         }}
-      > */}
+      > */
+      }
       <section
         lang={langName}
         className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-16 md:pt-24 text-center"

@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "title1": "Ship",
-    "title2": "Landing Page",
-    "title3": "Fast",
+    "title1": "Red",
+    "title2": "Point",
+    "title3": "EG",
     "description": "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour."
   },
   "SocialProof": {
@@ -13,7 +13,7 @@
     "description": "Join 1000+ Makers Boosting Conversions with Our Landing Page Boilerplate"
   },
   "Feature": {
-    "title": "Features"
+    "title": "Products"
   },
   "Pricing": {
     "title": "Pricing",

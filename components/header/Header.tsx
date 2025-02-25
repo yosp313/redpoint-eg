@@ -11,8 +11,7 @@ import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
 
 const links = [
-  { label: "Features", href: "#Features" },
-  { label: "Pricing", href: "#Pricing" },
+  { label: "Products", href: "#Products" },
   { label: "Testimonials", href: "#Testimonials" },
   { label: "FAQ", href: "#FAQ" },
 ];
@@ -35,14 +34,11 @@ const Header = () => {
           >
             <Image
               alt="Logo"
-              src="/logo.svg"
-              className="w-8 h-8"
-              width={32}
-              height={32}
+              src="/redpoint-logo.jpeg"
+              className="w-auto h-8"
+              width={64}
+              height={10}
             />
-            <span className="text-gray-950 dark:text-gray-300 hidden md:block">
-              {siteConfig.name}
-            </span>
           </Link>
         </div>
 

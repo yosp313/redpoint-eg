@@ -1,7 +1,9 @@
 import { ALL_FEATURES } from "@/config/feature";
+import Image from "next/image";
 import React from "react";
 import { RoughNotation } from "react-rough-notation";
-
+import { Button } from "../ui/button";
+import Link from "next/link";
 const Feature = ({
   id,
   locale,
@@ -18,7 +20,7 @@ const Feature = ({
       className="flex flex-col justify-center lg:max-w-7xl md:max-w-5xl w-[95%] mx-auto md:gap-14 pt-16"
     >
       <h2 className="text-center text-white">
-        <RoughNotation type="highlight" show={true} color="#2563EB">
+        <RoughNotation type="highlight" show={true} color="#DC2626">
           {locale.title}
         </RoughNotation>
       </h2>
@@ -37,21 +39,24 @@ const Feature = ({
             `}
           >
             <div className="p-4 w-16 h-16 dark:text-white rounded-full flex items-center justify-center">
-              {feature.icon && typeof feature.icon === "string" ? (
-                <span className="text-2xl">{feature.icon}</span>
-              ) : (
-                React.createElement(feature.icon, { className: "text-2xl" })
-              )}
             </div>
             <h2 className={"text-xl font-semibold mb-2"}>{feature.title}</h2>
-            <p className="text-slate-700 dark:text-slate-400">
-              {feature.content}
-            </p>
+            <Image
+              src={feature.image_url}
+              alt="product image"
+              width={256}
+              height={256}
+              className="rounded-md"
+            />
+            <Link href={feature.purchase_link}>
+              <Button className="m-2 bg-red-500 hover:bg-red-600">
+                Buy
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
     </section>
   );
 };
-
 export default Feature;

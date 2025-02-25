@@ -128,3 +128,10 @@ dist
 # sitemap
 */sitemap*.xml
 */robots.txt
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+*.mp4
