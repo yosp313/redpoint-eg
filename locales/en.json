@@ -3,14 +3,14 @@
     "title1": "Red",
     "title2": "Point",
     "title3": "EG",
-    "description": "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour."
+    "description": "an Egyptian company specializing in power solutions. We provide electric generators for reliable power supply, power factor correction to optimize energy use, and energy boosters to enhance overall energy performance.  RedPoint EG aims to deliver efficient and dependable power solutions for various needs in Egypt."
   },
   "SocialProof": {
-    "maker": "makers ship fast"
+    "maker": "customers happy"
   },
   "Showcase": {
     "title": "Showcase",
-    "description": "Join 1000+ Makers Boosting Conversions with Our Landing Page Boilerplate"
+    "description": "Join 1000+ happy customers with the provided electrical solutions."
   },
   "Feature": {
     "title": "Products"
@@ -42,6 +42,6 @@
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Get Boilerplate"
+    "title": "Get Products"
   }
 }

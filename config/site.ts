@@ -2,13 +2,11 @@ import { SiteConfig } from "@/types/siteConfig";
 import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
-
 const OPEN_SOURCE_URL = "https://github.com/weijunext/landing-page-boilerplate";
-
 const baseSiteConfig = {
   name: "RedPoint EG",
   description:
-    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
+    "An Egyptian company specializing in power solutions. We provide electric generators for reliable power supply, power factor correction to optimize energy use, and energy boosters to enhance overall energy performance.  RedPoint EG aims to deliver efficient and dependable power solutions for various needs in Egypt.",
   url: "https://landingpage.weijunext.com",
   ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: "/",
@@ -39,25 +37,10 @@ const baseSiteConfig = {
   },
   headerLinks: [],
   footerLinks: [
-    { name: "email", href: "mailto:weijunext@gmail.com", icon: MdEmail },
+    { name: "email", href: "mailto:redpointeg@hotmail.com", icon: MdEmail },
   ],
-  footerProducts: [
-    { url: "https://phcopilot.ai/", name: "Product Hunt Copilot" },
-    { url: "https://smartexcel.cc/", name: "Smart Excel" },
-    {
-      url: "https://landingpage.weijunext.com/",
-      name: "Landing Page Boilerplate",
-    },
-    { url: "https://weijunext.com/", name: "J实验室" },
-    { url: "https://nextjscn.org/", name: "Next.js 中文文档" },
-    { url: "https://nextjs.weijunext.com/", name: "Next.js Practice" },
-    {
-      url: "https://github.com/weijunext/indie-hacker-tools",
-      name: "Indie Hacker Tools",
-    },
-  ],
+  footerProducts: [],
 };
-
 export const siteConfig: SiteConfig = {
   ...baseSiteConfig,
   openGraph: {

@@ -18,11 +18,11 @@ export default async function HomeIndex({ lang }: { lang: string }) {
       {/* Showcase */}
       <Showcase id="Showcase" locale={dict.Showcase} />
       {/* USP (Unique Selling Proposition) */}
-      <Feature id="Features" locale={dict.Feature} langName={langName} />
+      <Feature id="products" locale={dict.Feature} langName={langName} />
       {/* Testimonials */}
-      <Testimonials id="Testimonials" locale={dict.Testimonials} />
+      {/* <Testimonials id="Testimonials" locale={dict.Testimonials} /> */}
       {/* FAQ (Frequently Asked Questions) */}
-      <FAQ id="FAQ" locale={dict.FAQ} langName={langName} />
+      {/* <FAQ id="FAQ" locale={dict.FAQ} langName={langName} /> */}
     </>
   );
 }

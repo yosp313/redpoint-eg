@@ -4,6 +4,7 @@ import React from "react";
 import { RoughNotation } from "react-rough-notation";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { MdWhatsapp } from "react-icons/md";
 const Feature = ({
   id,
   locale,
@@ -41,16 +42,24 @@ const Feature = ({
             <div className="p-4 w-16 h-16 dark:text-white rounded-full flex items-center justify-center">
             </div>
             <h2 className={"text-xl font-semibold mb-2"}>{feature.title}</h2>
-            <Image
-              src={feature.image_url}
-              alt="product image"
-              width={256}
-              height={256}
-              className="rounded-md"
-            />
+            <Link href={feature.video_url}>
+              <Image
+                src={feature.image_url}
+                alt="product image"
+                width={256}
+                height={256}
+                className="rounded-md"
+              />
+            </Link>
             <Link href={feature.purchase_link}>
               <Button className="m-2 bg-red-500 hover:bg-red-600">
-                Buy
+                Purchase
+              </Button>
+            </Link>
+            <Link href={feature.whatsapp_link}>
+              <Button className="m-2 bg-green-500 hover:bg-green-600">
+                <MdWhatsapp />
+                Whatsapp
               </Button>
             </Link>
           </div>

@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { RocketIcon } from "lucide-react";
 import Link from "next/link";
-
 const CTAButton = ({ locale }: { locale: any }) => {
   return (
     <Link
       href="#products"
       target="_blank"
       rel="noopener noreferrer nofollow"
+      scroll={true}
     >
       <Button
         variant="default"
@@ -20,5 +20,4 @@ const CTAButton = ({ locale }: { locale: any }) => {
     </Link>
   );
 };
-
 export default CTAButton;
