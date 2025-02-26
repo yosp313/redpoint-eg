@@ -2,7 +2,6 @@ import { showcases } from "@/config/showcases";
 import { createModernMetaScraper, ModernMetaScraper } from "@/lib/metaScraper";
 import { Spacer } from "@nextui-org/react";
 import { RoughNotation } from "react-rough-notation";
-import Video from "next-video";
 const scraper: ModernMetaScraper = createModernMetaScraper();
 const Showcase = async ({ id, locale }: { id: string; locale: any }) => {
   const sites = await scraper.scrapeMultiple(showcases);
@@ -28,6 +27,7 @@ const Showcase = async ({ id, locale }: { id: string; locale: any }) => {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          className="w-auto h-60"
         >
         </iframe>
       </div>

@@ -1,4 +1,3 @@
-import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 // next.config.js
 const nextConfig = {
@@ -16,4 +15,4 @@ const nextConfig = {
     return config;
   },
 };
-export default withNextVideo(nextConfig);
+export default nextConfig;
